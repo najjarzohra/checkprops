@@ -1,17 +1,16 @@
 import React from "react";
-function Profilcomp (props){
+function Profilcomp (props ){
+   
 return(
-    <div style={{textAlign:'center' , color:'blue' ,fontFamily:'cursive', fontSize:'30px'}}>
-<p>
-    Hello , </p>
-  <p>  I'm {props.name},i'm {props.age} years old ,my profession is a {props.profession} . 
-
-</p>
-
-
+    <div >
+<h1>{props.fullName}</h1>
+<h1>{props.profession}</h1>
+<div>{props.children}</div>
+<button onClick={props.handleAlert}>click me</button>
     </div>
     
-)
+    
+);
 }
 export default Profilcomp ;
 
